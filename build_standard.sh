@@ -21,6 +21,6 @@ echo "strip modules"
 find . -print0 | cpio --null -ov --format=newc > ../initramfs.cpio
 cd ../Kernel
 make menuconfig
-export KBUILD_BUILD_VERSION="cm7_kernel_std_1.2"
+export KBUILD_BUILD_VERSION="sense_kernel_std"
 make -j8
 echo Ready
